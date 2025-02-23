@@ -1,0 +1,30 @@
+[
+  {
+    "name": "CerolingoBM",
+    "description": "Simple Duolingo bot managing tool",
+    "image": "cerolingobm.jpg",
+    "link": "https://github.com/ancym0n/Cerolingo-Bot-Manager",
+    "technologies": ["nodejs", "js", "py"]
+  },
+  {
+    "name": "Cerolingo",
+    "description": "Simple Duolingo answer automation tool",
+    "image": "cerolingo.jpg",
+    "link": "https://github.com/ancym0n/Cerolingo",
+    "technologies": ["js"]
+  },
+  {
+    "name": "MCBP",
+    "description": "GUI-based Minecraft bot manager with custom script creation.",
+    "image": "mcbp.jpg",
+    "link": "https://github.com/ancym0n/Minecraft-Bot-Panel",
+    "technologies": ["nodejs", "js"]
+  },
+  {
+    "name": "MCBP",
+    "description": "GUI-based Minecraft bot manager with custom script creation.",
+    "image": "mcbp.jpg",
+    "link": "https://github.com/ancym0n/Minecraft-Bot-Panel",
+    "technologies": ["nodejs", "js"]
+  }
+]

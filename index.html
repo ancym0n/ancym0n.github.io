@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ancymon.dev</title>
+    <link rel="stylesheet" href="src/css/animations.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/navbar.css" />
+    <link rel="stylesheet" href="src/css/resize.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <script src="src/js/main.js" defer></script>
+    <script src="src/js/time.js" defer></script>
+    <script src="src/js/projects.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a title="Home Page" href="#home" class="nav-button">
+        <img src="src/img/home.svg" alt="" />
+      </a>
+      <a title="Projects" href="#projects" class="nav-button">
+        <img src="src/img/projects.svg" alt="" />
+      </a>
+      <a title="Contact" href="#contact" class="nav-button">
+        <img src="src/img/email.svg" alt="" />
+      </a>
+    </nav>
+    <section id="home" class="full-length">
+      <div class="top">
+        <div class="welcome">
+          <h1>Welcome to</h1>
+          <h1 class="glow">ancymon.dev</h1>
+        </div>
+        <div class="time">
+          <p><span id="time">00:00</span>, Poland</p>
+        </div>
+      </div>
+      <div id="game" class="box"></div>
+      <div class="aboutme">
+        <h1>About me</h1>
+        <p>
+          Hey, I'm a young developer from Poland. I design, I code, and I mostly
+          just automate things that annoy me. A perfectionist who isn't perfect
+          - but at least my code tries to be.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="project-div"></div>
+      <div class="hider"></div>
+    </section>
+    <div class="view-more">
+      <p onclick="viewMore()" type="more">View more</p>
+    </div>
+
+    <section id="contact">
+      <h1>Reviews</h1>
+      <div class="review">
+        <img src="src/img/avatar.svg" alt="" />
+        <div class="review-text">
+          <h2>Fake review</h2>
+          <p>
+            I'm just a fake review so idk, very cool guy, etc. He does indeed
+            code.
+          </p>
+        </div>
+      </div>
+      <h1 class="convinced">
+        Convinced?<br /><span class="glow">Contact</span> me!
+      </h1>
+      <div
+        img="email"
+        class="contact-info"
+        onclick="copy('ancymon@ancymon.dev','email')"
+      >
+        <p>ancymon@ancymon.dev</p>
+      </div>
+      <div
+        img="discord"
+        class="contact-info"
+        onclick="copy('@ancymon','discord')"
+      >
+        <p>@ancymon</p>
+      </div>
+    </section>
+    <div class="navbar-helper"></div>
+  </body>
+</html>
