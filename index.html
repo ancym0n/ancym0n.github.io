@@ -2,88 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ancymon.dev</title>
-    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="src/css/animations.css" />
-    <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/navbar.css" />
-    <link rel="stylesheet" href="src/css/resize.css" />
-    <link rel="stylesheet" href="src/css/projects.css" />
-    <script src="src/js/main.js" defer></script>
-    <script src="src/js/time.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ancymon</title>
+    <meta
+      name="description"
+      content="Personal projects by ancymon. Bots, desktop tools and web apps in JavaScript and Python."
+    />
+    <meta name="theme-color" content="#1c1b18" />
+    <link rel="canonical" href="https://ancymon.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ancymon.dev" />
+    <meta property="og:title" content="ancymon" />
+    <meta
+      property="og:description"
+      content="Bots, tools, and side projects. JavaScript &amp; Python."
+    />
+    <meta property="og:url" content="https://ancymon.dev/" />
+    <meta property="og:image" content="https://ancymon.dev/src/img/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ancymon - projects &amp; code" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ancymon" />
+    <meta
+      name="twitter:description"
+      content="Bots, tools, and side projects. JavaScript &amp; Python."
+    />
+    <meta name="twitter:image" content="https://ancymon.dev/src/img/og.png" />
+    <meta name="twitter:image:alt" content="ancymon - projects &amp; code" />
+
+    <link rel="icon" type="image/png" href="src/img/favicon.png" />
+    <link rel="apple-touch-icon" href="src/img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/effects.js" defer></script>
     <script src="src/js/projects.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "ancymon",
+        "url": "https://ancymon.dev/",
+        "image": "https://ancymon.dev/src/img/avatar.png",
+        "jobTitle": "Developer",
+        "sameAs": ["https://github.com/ancym0n"]
+      }
+    </script>
   </head>
   <body>
-    <nav>
-      <a title="Home Page" href="#home" class="nav-button">
-        <img src="src/img/home.svg" alt="" />
-      </a>
-      <a title="Projects" href="#projects" class="nav-button">
-        <img src="src/img/projects.svg" alt="" />
-      </a>
-      <a title="Contact" href="#contact" class="nav-button">
-        <img src="src/img/email.svg" alt="" />
-      </a>
-    </nav>
-    <section id="home" class="full-length">
-      <div class="top">
-        <div class="welcome">
-          <h1>Welcome to</h1>
-          <h1 class="glow">ancymon.dev</h1>
-        </div>
-        <div class="time">
-          <p><span id="time">00:00</span>, Poland</p>
-        </div>
-      </div>
-      <div id="game" class="box"></div>
-      <div class="aboutme">
-        <h1>About me</h1>
-        <p>
-          Hey, I'm a young developer from Poland. I design, I code, and I mostly
-          just automate things that annoy me. A perfectionist who isn't perfect
-          - but at least my code tries to be.
-        </p>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="project-div"></div>
-      <div class="hider"></div>
-    </section>
-    <div class="view-more">
-      <p onclick="viewMore()" type="more">View more</p>
-    </div>
+    <a class="skip-link" href="#work">Skip to projects</a>
 
-    <section id="contact">
-      <h1>Reviews</h1>
-      <div class="review">
-        <img src="src/img/avatar.svg" alt="" />
-        <div class="review-text">
-          <h2>Fake review</h2>
-          <p>
-            I'm just a fake review so idk, very cool guy, etc. He does indeed
-            code.
-          </p>
+    <header class="site-header">
+      <div class="nav container">
+        <a class="brand" href="#top">ancymon<span>.dev</span></a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="top" aria-labelledby="intro-title">
+        <p class="eyebrow">Developer / Poland</p>
+        <h1 class="headline" id="intro-title" data-reveal>ancymon<span>.</span></h1>
+        <p class="lead">Bots, tools, and side projects.</p>
+        <div class="hero-links">
+          <a class="text-link" href="#work">
+            Browse projects
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6" /></svg>
+          </a>
+          <a class="text-link secondary" href="https://github.com/ancym0n" target="_blank" rel="noopener">
+            GitHub
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" /></svg>
+          </a>
         </div>
+        <a class="portrait" href="https://github.com/ancym0n" target="_blank" rel="noopener" aria-label="ancym0n on GitHub">
+          <img src="src/img/avatar.png" alt="A cinnamon roll - ancymon's profile picture" width="415" height="360" fetchpriority="high" />
+          <span class="portrait-caption" aria-hidden="true">
+            @ancym0n
+            <svg viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg>
+          </span>
+        </a>
+      </section>
+
+      <section class="work container" id="work" aria-labelledby="work-title" tabindex="-1">
+        <header class="section-head" data-reveal>
+          <h2 id="work-title">Projects <span class="project-count" id="project-count"></span></h2>
+          <a class="text-link secondary" href="https://github.com/ancym0n?tab=repositories" target="_blank" rel="noopener">
+            All repositories
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" /></svg>
+          </a>
+        </header>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by language"></div>
+        <div class="project-list" id="projects">
+          <p class="loading" hidden>Fetching projects from GitHub...</p>
+        </div>
+        <noscript>
+          <p class="note">Browse my projects on <a href="https://github.com/ancym0n?tab=repositories">GitHub</a>.</p>
+        </noscript>
+        <p class="note" id="projects-note" role="status" hidden></p>
+        <p class="sr-only" id="projects-status" role="status"></p>
+        <div class="more-wrap">
+          <button class="more-button" id="more" type="button" aria-controls="projects" hidden>
+            <span>Show all projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <div class="details container">
+        <section class="about" id="about" aria-labelledby="about-title">
+          <h2 id="about-title" data-reveal>About</h2>
+          <p>
+            I'm based in Poland. I work mainly with JavaScript and Python,
+            on Discord and Minecraft bots, desktop utilities, and web apps.
+          </p>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title" tabindex="-1">
+          <h2 id="contact-title" data-reveal>Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <button class="contact-row" type="button" data-copy="ancymon@ancymon.dev" data-label="Email copied" aria-label="Copy email address: ancymon@ancymon.dev">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ancymon@ancymon.dev</span>
+                <span class="copy-label">Copy</span>
+              </button>
+            </li>
+            <li>
+              <button class="contact-row" type="button" data-copy="ancymon" data-label="Discord username copied" aria-label="Copy Discord username: ancymon">
+                <span class="contact-label">Discord</span>
+                <span class="contact-value">@ancymon</span>
+                <span class="copy-label">Copy</span>
+              </button>
+            </li>
+            <li>
+              <a class="contact-row" href="https://github.com/ancym0n" target="_blank" rel="noopener">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">ancym0n</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" /></svg>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <h1 class="convinced">
-        Convinced?<br /><span class="glow">Contact</span> me!
-      </h1>
-      <div
-        img="email"
-        class="contact-info"
-        onclick="copy('ancymon@ancymon.dev','email')"
-      >
-        <p>ancymon@ancymon.dev</p>
-      </div>
-      <div
-        img="discord"
-        class="contact-info"
-        onclick="copy('@ancymon','discord')"
-      >
-        <p>@ancymon</p>
-      </div>
-    </section>
-    <div class="navbar-helper"></div>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year">2026</span> ancymon</p>
+      <a href="https://github.com/ancym0n/ancym0n.github.io" target="_blank" rel="noopener">Source code</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status"></div>
   </body>
 </html>
